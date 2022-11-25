@@ -21,7 +21,7 @@ pipeline {
         
         stage('Cloning Git') {
     1        steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/arshad9423/newdevproject.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/arshad9423/newdevproject.git']]])
             }
         }
   
